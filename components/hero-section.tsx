@@ -11,7 +11,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col md:flex-row items-center gap-8 md:gap-12"
+          className="flex flex-col-reverse md:flex-row items-center md:items-center justify-between gap-8 md:gap-16"
         >
           <div className="flex-1 text-center md:text-left">
             <motion.h1
@@ -43,14 +43,14 @@ export function HeroSection() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex-shrink-0"
+            className="flex-shrink-0 flex items-center justify-center"
           >
-            <div className="relative w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48">
+            <div className="relative w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 overflow-hidden rounded-full">
               <Image
-                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrb&w=400"
+                src="/prateek.png"
                 alt="Prateek's Profile"
                 fill
-                className="rounded-full object-cover shadow-xl"
+                className="object-cover object-[0_32%] rounded-full shadow-xl"
                 priority
               />
             </div>
