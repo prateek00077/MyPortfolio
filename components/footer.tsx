@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 
 const socialLinks = [
   { icon: Home, href: '#', label: 'Website' },
-  { icon: FileText, href: '#', label: 'Resume' },
+  { icon: FileText, href: './resume.pdf', label: 'Resume' },
   { icon: Github, href: 'https://github.com/prateek00077', label: 'GitHub' },
   { icon: Linkedin, href: 'https://www.linkedin.com/in/prateek-pandey-a0278b228/', label: 'LinkedIn' },
   { icon: Twitter, href: 'https://x.com/prateek__077', label: 'Twitter' },
