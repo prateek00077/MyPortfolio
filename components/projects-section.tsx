@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Github } from 'lucide-react';
 import { projects, type Project } from '@/data/projects';
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
@@ -26,6 +26,16 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       <div className="p-6">
         <div className="flex items-center gap-2 mb-2">
           <h3 className="text-xl font-semibold text-foreground">{project.title}</h3>
+          {project.gitlink && (
+            <a
+              href={project.gitlink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Github size={16} />
+            </a>
+          )}
           {project.link && (
             <a
               href={project.link}
