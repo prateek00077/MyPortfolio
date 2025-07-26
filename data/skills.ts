@@ -8,10 +8,13 @@ export const skills = [
   'TypeScript',
   'Node.js',
   'express',
-  'Python',
+  'PrimeReact',
   'MongoDB',
   'MySql',
-  'Postgres',
-  'Java',
+  'Firebase',
+  'Git',
+  'GitHub',
+  'Java basic',
+  'C basic',
   'C++'
 ];
